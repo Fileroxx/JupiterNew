@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.cor1::selection {
+  background: #6c43f2;
+  color: #fff;
+}
+
+hr {
+  opacity: 0.08;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+#funciona {
+  background: url("../img/linha.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+#header {
+  background: url("../img/vetor1.png") no-repeat,
+    linear-gradient(180deg, #6446f7 0%, #8034e0 104.57%);
+  background-size: 45%;
+  background-position-y: 110%;
+  background-position-x: 50%;
+  padding-top: 20px;
+  padding-bottom: 150px;
+}
+
+nav {
+  margin-top: 0px;
+}
+
+nav img {
+  width: 70%;
+}
+
+.navbar-nav {
+  margin-left: 0px;
+}
+
+.navbar-nav a {
+  margin-left: 25px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.navbar-nav a:hover {
+  color: #fff;
+  outline: none;
+}
+
+.navbar-nav .acessar {
+  background: #f71963;
+  margin-left: 7rem;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+#header .titulo h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding-top: 10%;
+  padding-right: 180px;
+  padding-left: 180px;
+  font-weight: 600;
+}
+
+#header .paragrafo p {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 15px;
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+#header .botao {
+  text-align: center;
+}
+
+#header .botao button {
+  background: #0ad306;
+  color: #fff;
+  font-weight: 500;
+  width: 25%;
+  height: 3em;
+  margin-top: 10px;
+}
+
+#depoimentos {
+  background: #6c43f2;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#depoimentos .cardDepoimento {
+  display: flex;
+}
+
+#depoimentos img {
+  width: 70%;
+  margin-top: 0.5em;
+}
+
+#depoimentos .texto p {
+  color: #fff;
+  font-weight: 300;
+  padding-right: 500px;
+  margin-top: 1.3rem;
+}
+
+#apresentacao {
+  padding-bottom: 5rem;
+  background: url("../img/bolinhas.png") no-repeat;
+  background-size: 15%;
+  background-position-y: 50%;
+}
+
+#apresentacao .titulo h3 {
+  color: #4a596b;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 8rem;
+}
+
+#apresentacao .paragrafo p {
+  color: #4a596b;
+  font-weight: 300;
+  font-size: 18px;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+
+#apresentacao .imagem img {
+  width: 80%;
+  padding-top: 4rem;
+}
+
+#apresentacao .titulo2 h3 {
+  color: #4a596b;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+#apresentacao .video {
+}
+
+#apresentacao .descricao p {
+  color: #4a596b;
+  text-align: center;
+  padding-left: 18em;
+  padding-right: 18em;
+  font-weight: 300;
+}
+
+#apresentacao .botao {
+  text-align: center;
+}
+
+#apresentacao .botao button {
+  background: #0ad306;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 25%;
+  height: 3em;
+  border: none;
+  margin-top: 20px;
+}
+
+#publico .titulo h3 {
+  color: #4a596b;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 35px;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+#publico .imagem img {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#depoimentos2 {
+  background: #6c43f2;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#depoimentos2 img {
+  width: 100%;
+}
+
+#depoimentos2 .cardContainer {
+  display: flex;
+}
+
+#depoimentos2 .texto .p1 p {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 30px;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+#depoimentos2 .p2 p {
+  color: #fff;
+  font-weight: 300;
+  margin-top: 30px;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+#ganhamos {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#ganhamos .titulo h3 {
+  color: #4a596b;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+#ganhamos .paragrafo p {
+  font-weight: 300;
+  color: #4a596b;
+  padding-right: 5em;
+  padding-top: 1em;
+}
+
+#ganhamos .paragrafo span {
+  font-weight: 500;
+}
+
+#funciona .titulo {
+  display: flex;
+  margin-bottom: 4em;
+  margin-top: 2em;
+}
+
+#funciona .titulo p {
+  padding-left: 5em;
+  padding-top: 0.5em;
+  color: #4a596b;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#funciona .titulo h3 {
+  color: #4a596b;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 40px;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#funciona img {
+  width: 90%;
+}
+
+#duvida .titulo h3 {
+  color: #4a596b;
+  padding-top: 5em;
+  font-size: 35px;
+  font-weight: 400;
+  padding-right: 6em;
+  line-height: 50px;
+}
+
+#duvida .accordion {
+  margin-bottom: 8em;
+}
+
+#duvida .accordion-button {
+  color: #7444f6;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#duvida,
+.accordion-button:hover {
+  background: none;
+}
+
+#duvida .accordion-button:focus {
+  outline-style: none;
+  box-shadow: none;
+  background: none;
+}
+
+#duvida .accordion-item {
+  border: none;
+  background: none;
+  margin-top: 2.5em;
+}
+
+#duvida .accordion-item:hover {
+  border: none;
+  background: none;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  nav .navbar-nav a {
+    margin-left: 0.5em;
+  }
+
+  nav .navbar-nav .acessar {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2560px) {
+  #depoimentos .p1 {
+    padding-top: 1em;
+  }
+
+  #apresentacao .descricao p {
+    padding-left: 50em;
+    padding-right: 50em;
+  }
+
+  #funciona {
+    background-size: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  #header .navbar-nav {
+    background: #fff;
+    border-radius: 30px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  #header .navbar-nav a {
+    color: #000;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 2em;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  #header .acessar {
+    width: 60%;
+    height: 7vh;
+    color: #fff !important;
+  }
+
+  #header .titulo h1 {
+    padding: 0;
+    padding-top: 2em;
+  }
+
+  #header .paragrafo p {
+    padding: 0;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+  }
+
+  #header .botao button {
+    width: 35%;
+  }
+
+  #depoimentos .mulher img {
+    width: 90%;
+  }
+
+  #depoimentos .texto p {
+    padding: 0;
+    padding-top: 0em;
+    padding-left: 1em;
+    padding-right: 15em;
+  }
+
+  #apresentacao .titulo h3 {
+    text-align: center;
+  }
+
+  #apresentacao .paragrafo p {
+    text-align: center;
+    padding: 0;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-right: 5em;
+  }
+
+  #apresentacao .imagem {
+    text-align: center;
+  }
+
+  #apresentacao .imagem img {
+    width: 70%;
+  }
+
+  #apresentacao .descricao p {
+    padding: 0;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  #publico .imagem {
+    text-align: center;
+  }
+
+  #publico .imagem img {
+    width: 50%;
+  }
+
+  #depoimentos2 img {
+    width: 80%;
+    padding-bottom: 5em;
+  }
+
+  #depoimentos2 .texto {
+    padding-right: 7em;
+  }
+
+  #ganhamos .titulo h3 {
+    text-align: center;
+  }
+
+  #ganhamos .paragrafo {
+    text-align: center;
+    padding-bottom: 5em;
+  }
+
+  #ganhamos .paragrafo p {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  #funciona .titulo {
+    flex-direction: column;
+  }
+
+  #funciona .titulo h3 {
+    text-align: center;
+  }
+
+  #funciona .titulo p {
+    text-align: center;
+    padding: 0;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 458px) {
+  #header {
+    background: linear-gradient(180deg, #6446f7 0%, #8034e0 104.57%);
+  }
+
+  #header nav img {
+    width: 50%;
+    margin-left: 1rem;
+  }
+
+  #header .navbar-toggler {
+    margin-right: 1rem;
+  }
+
+  #header .navbar-nav {
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 1em;
+  }
+
+  #header .navbar-nav a {
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  #header .acessar {
+    width: 70%;
+    margin-left: 4em;
+  }
+
+  #header .acessar {
+    background: #f71963;
+    color: #fff !important;
+  }
+
+  #header .titulo h1 {
+    padding: 0;
+    padding-top: 2em;
+    font-size: 35px;
+  }
+
+  #header .paragrafo p {
+    padding: 0;
+    padding-top: 1em;
+  }
+
+  #header .botao button {
+    width: 90%;
+    height: 7vh;
+    margin-top: 2em;
+  }
+
+  #depoimentos .cardDepoimento {
+    flex-direction: column;
+  }
+
+  #depoimentos .mulher {
+    text-align: center;
+  }
+
+  #depoimentos .mulher img {
+    width: 40%;
+  }
+
+  #depoimentos .texto p {
+    padding: 0;
+    text-align: center;
+    padding: 0 5em;
+  }
+
+  #apresentacao .titulo h3 {
+    text-align: center;
+  }
+
+  #apresentacao .paragrafo p {
+    text-align: center;
+    padding: 0 2em;
+    margin-top: 2em;
+  }
+
+  #apresentacao .imagem {
+    text-align: center;
+  }
+
+  #apresentacao .imagem img {
+    width: 85%;
+  }
+
+  #apresentacao .titulo2 h3 {
+    padding: 0;
+    margin-top: 5em;
+  }
+
+  #apresentacao .descricao p {
+    padding: 0 3em;
+  }
+
+  #apresentacao .botao button {
+    width: 85%;
+    height: 7vh;
+  }
+
+  #publico .imagem {
+    text-align: center;
+  }
+
+  #publico .imagem img {
+    width: 80%;
+  }
+
+  #depoimentos2 .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #depoimentos2 .imagem {
+    text-align: center;
+  }
+
+  #depoimentos2 .imagem img {
+    width: 50%;
+  }
+
+  #depoimentos2 .imagemHomem {
+    text-align: center;
+  }
+
+  #depoimentos2 .texto p {
+    text-align: center;
+  }
+
+  #depoimentos2 .imagemHomem img {
+    width: 50%;
+  }
+
+  #funciona .titulo {
+    flex-direction: column;
+  }
+
+  #funciona .titulo h3 {
+    text-align: center;
+  }
+
+  #funciona .titulo p {
+    text-align: center;
+    padding: 0 3em;
+  }
+
+  #funciona img {
+    margin: 0 auto;
+  }
+
+  #ganhamos .titulo h3 {
+    text-align: center;
+  }
+
+  #ganhamos .paragrafo p {
+    text-align: center;
+    padding: 0;
+    padding-right: 3em;
+    padding-left: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  #duvida .titulo h3 {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 414px) {
+  nav .navbar-toggler {
+    margin-left: 15em;
+    margin-top: -3em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 390px) {
+  nav .navbar-toggler {
+    margin-left: 15em;
+    margin-top: -3em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  nav .navbar-toggler {
+    margin-left: 12em;
+    margin-top: -3em;
+  }
+}
