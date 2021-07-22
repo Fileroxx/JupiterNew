@@ -76,8 +76,8 @@ nav img {
   color: #fff;
   font-size: 40px;
   padding-top: 10%;
-  padding-right: 350px;
-  padding-left: 350px;
+  padding-right: 250px;
+  padding-left: 250px;
   font-weight: 600;
 }
 
@@ -346,6 +346,13 @@ nav img {
 
   #funciona {
     background-size: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  #header .titulo h1 {
+    padding-right: 300px;
+    padding-left: 300px;
   }
 }
 
