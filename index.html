@@ -36,16 +36,16 @@
                       <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                           <li class="nav-item">
-                            <a class="nav-link md-text-white" href="#">Como usar</a>
+                            <a class="nav-link md-text-white" href="#funciona">Como usar</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link md-text-white" href="#">Integrações</a>
+                            <a class="nav-link md-text-white" href="#apresentacao">Integrações</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link md-text-white" href="#">Perguntas Frequentes</a>
+                            <a class="nav-link md-text-white" href="#duvida">Perguntas Frequentes</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link acessar" href="#" aria-disabled="true">Acessar Painel</a>
+                            <a class="nav-link acessar" href="https://app.jupter.io/" aria-disabled="true">Acessar Painel</a>
                           </li>
                         </ul>
                       </div>
@@ -58,7 +58,7 @@
                     <h1 class="cor1">
                         Seu negócio vendendo como a 
                         Amazon, Magalu, Americanas, 
-                        Mercado Livre e outros vendem. 
+                        Mercado Livre e outros vendem.<span>|</span>
                     </h1>
                 </div>
 
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="botao">
-                    <button class="btn">VEJA COMO FUNCIONA</button>
+                   <a href="#apresentacao"> <button class="btn">VEJA COMO FUNCIONA</button> </a>
                 </div>
 
 
@@ -159,9 +159,11 @@
                         </div>
 
                         <div class="col-lg-6">
-                            <div class="imagem">
-                                <img src="img/apresentacao.png" class="img-fluid" alt="">
-                            </div>
+                           <div class="imagem">
+                               <img src="img/plugins.png" alt="">
+                           </div>
+                        
+                            
                         </div>
 
                     </div>
@@ -488,7 +490,32 @@
     <!--FOOTER-->
         <div id="footer">
             <div class="container">
+                <div class="row">
 
+                    <div class="col-lg-4">
+                        <div class="texto">
+                            <p>
+                                Todos os direitos reservados
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-xs-12">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                    </div>
+
+
+                    <div class="col-lg-4" >
+                        <div class="icones">
+                            <img src="img/youtube.png" alt="">
+                            <img src="img/instagram.png" alt="">
+                            <img src="img/facebook.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     <!--FIM FOOTER-->
@@ -560,8 +587,6 @@
 
 
 
-
-
     $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -579,6 +604,7 @@
 
 
     </script>
+
 
 </body>
 
