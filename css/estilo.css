@@ -109,7 +109,7 @@ nav img {
 
 .navbar-nav .acessar {
   background: #f71963;
-  margin-left: 7rem;
+  margin-left: 8rem;
   color: #fff;
   width: 80%;
   text-align: center;
@@ -272,7 +272,7 @@ nav img {
 }
 
 #depoimentos {
-  background: #6c43f2;
+  background: #0e0529;
   padding-top: 5em;
   padding-bottom: 5em;
   height: auto;
@@ -283,6 +283,7 @@ nav img {
   margin: 0 auto;
   box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
   width: 80%;
+  border: 1px solid #8322f1;
   height: 40vh;
   padding: 50px;
   overflow: hidden;
@@ -512,7 +513,7 @@ nav img {
 
 @media screen and (min-width: 1200px) and (max-width: 1366px) {
   #depoimentos .cardContainer {
-    height: 40vh;
+    height: 58vh;
   }
 }
 
@@ -520,6 +521,10 @@ nav img {
   #header .titulo h1 {
     padding-right: 300px;
     padding-left: 300px;
+  }
+
+  #depoimentos .cardContainer {
+    height: 50vh;
   }
 }
 
@@ -936,13 +941,13 @@ nav img {
 
   #depoimentos .imagem img {
     width: 50%;
-    margin-left: 65%;
+    margin-left: 80%;
     margin-bottom: 2em;
     border-radius: 50%;
   }
 
   #depoimentos .nome h4 {
-    margin: 0 auto;
+    margin-left: -8%;
     text-align: center;
   }
 
@@ -952,7 +957,7 @@ nav img {
 
   #depoimentos .descricao p {
     text-align: center;
-    margin-left: 50%;
+    margin-left: 40%;
     display: none;
   }
 
@@ -960,6 +965,7 @@ nav img {
     text-align: center;
     padding: 0;
     margin-top: 30px;
+    margin-left: -10%;
   }
 
   #depoimentos .cardDepo {
