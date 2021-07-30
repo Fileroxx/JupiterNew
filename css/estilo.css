@@ -43,7 +43,19 @@ iframe {
   border-style: solid;
   border-width: 3em 3em 0 3em;
   border-color: #ffffff transparent transparent transparent;
+  animation: MoveUpDown 0.8s linear infinite;
   -webkit-transform: rotate(360deg);
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50% {
+    top: 10px;
+  }
 }
 
 .arrow:after {
@@ -55,22 +67,18 @@ iframe {
   height: 0px;
   border-style: solid;
   border-width: 3em 3em 0 3em;
-  border-color: #8319fc transparent transparent transparent;
+  border-color: #8322f1 transparent transparent transparent;
   -webkit-transform: rotate(360deg);
 }
 
 #funciona {
-  background: url("../img/linha.png") no-repeat;
+  background-image: url("../img/linha.png") no-repeat;
   background-size: 90%;
   background-position: center;
 }
 
 #header {
-  background: url("../img/vetor1.png") no-repeat,
-    linear-gradient(180deg, #6446f7 0%, #8034e0 104.57%);
-  background-size: 45%;
-  background-position-y: 110%;
-  background-position-x: 50%;
+  background: linear-gradient(180deg, #6446f7 0%, #8034e0 104.57%);
   padding-top: 20px;
   padding-bottom: auto;
 }
@@ -158,7 +166,7 @@ nav img {
   margin-top: 10px;
 }
 
-#depoimentos {
+/* #depoimentos {
   background: #6c43f2;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -178,7 +186,7 @@ nav img {
   font-weight: 300;
   padding-right: 500px;
   margin-top: 1.3rem;
-}
+} */
 
 #apresentacao {
   padding-bottom: 5rem;
@@ -204,7 +212,7 @@ nav img {
 }
 
 #apresentacao .imagem img {
-  width: 80%;
+  width: 90%;
   padding-top: 4rem;
   z-index: 99;
 }
@@ -244,10 +252,15 @@ nav img {
   margin-top: 20px;
 }
 
+#publico {
+  background: rgba(196, 196, 196, 0.1);
+}
+
 #publico .titulo h3 {
   color: #4a596b;
   font-weight: 500;
   letter-spacing: 1px;
+  padding: 30px;
   font-size: 35px;
   margin-top: 8rem;
   text-align: center;
@@ -258,6 +271,73 @@ nav img {
   padding-bottom: 5em;
 }
 
+#depoimentos {
+  background: #6c43f2;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  height: auto;
+}
+
+#depoimentos .cardContainer {
+  background: #0e0529;
+  margin: 0 auto;
+  box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
+  width: 80%;
+  height: 40vh;
+  padding: 50px;
+  overflow: hidden;
+  border-radius: 25px;
+  color: #fff;
+}
+
+#depoimentos .cardDepo {
+  display: flex;
+}
+
+#depoimentos .imagem {
+  width: 300px;
+  background: #7b5eea;
+}
+
+#depoimentos .imagem img {
+  border-radius: 25px;
+}
+
+#depoimentos .texto {
+  margin-left: 5em;
+}
+
+#depoimentos h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#depoimentos .descricao p {
+  line-height: 0px;
+  color: #a04eff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#depoimentos .paragrafo p {
+  padding-top: 2em;
+  font-weight: 400;
+  color: #f7f7f7;
+  font-size: 18px;
+}
+
+#depoimentos button {
+  background: #8322f1;
+}
+
+/* #depoimentos #depoimentos .cardContainer {
+  height: 10vh;
+  background: #fff;
+  width: 50%;
+  margin: 0 auto;
+} */
+
 #depoimentos2 {
   background: #6c43f2;
   padding-top: 5em;
@@ -265,15 +345,20 @@ nav img {
 }
 
 #depoimentos2 img {
-  width: 100%;
+  width: 65%;
+  margin-left: 15%;
+  margin-top: 10em;
 }
 
 #depoimentos2 .cardContainer {
   display: flex;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 #depoimentos2 .texto .p1 p {
-  color: #fff;
+  color: #061122;
   font-weight: 500;
   margin-top: 30px;
   padding-right: 2em;
@@ -281,7 +366,7 @@ nav img {
 }
 
 #depoimentos2 .p2 p {
-  color: #fff;
+  color: #061122;
   font-weight: 300;
   margin-top: 30px;
   padding-right: 2em;
@@ -422,6 +507,12 @@ nav img {
 
   #funciona {
     background-size: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  #depoimentos .cardContainer {
+    height: 40vh;
   }
 }
 
@@ -613,11 +704,11 @@ nav img {
     margin-top: 2em;
   }
 
-  #depoimentos .cardDepoimento {
+  /* #depoimentos .cardDepoimento {
     flex-direction: column;
-  }
+  } */
 
-  #depoimentos .mulher {
+  /* #depoimentos .mulher {
     text-align: center;
   }
 
@@ -629,6 +720,66 @@ nav img {
     padding: 0;
     text-align: center;
     padding: 0 5em;
+  } */
+
+  #depoimentos {
+    width: 100%;
+  }
+
+  #depoimentos .cardContainer {
+    height: 65vh;
+    width: 90vw;
+    margin-left: -0%;
+  }
+
+  #depoimentos .cardDepo {
+    flex-direction: column;
+  }
+
+  #depoimentos .imagem {
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #depoimentos .imagem img {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  #depoimentos .texto {
+    width: 100%;
+  }
+
+  #depoimentos .nome {
+    width: 100%;
+    text-align: center;
+    margin-left: -30%;
+    margin-top: 1em;
+  }
+
+  #depoimentos .descricao {
+    margin-left: -20%;
+    margin-top: 2em;
+    display: none;
+  }
+
+  #depoimentos button {
+    display: none;
+  }
+
+  #depoimentos .descricao p {
+    font-size: 10px;
+  }
+
+  #depoimentos .paragrafo p {
+    text-align: center;
+    margin-left: -60%;
+    font-size: 15px;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   #apresentacao .titulo h3 {
@@ -746,10 +897,73 @@ nav img {
   }
 }
 
+@media screen and (min-width: 458px) and (max-width: 458px) {
+  #depoimentos .paragrafo p {
+    padding: 1em 7em;
+    margin-left: -50%;
+  }
+
+  #depoimentos .nome h4 {
+    margin-left: 5%;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 320px) {
   nav .navbar-toggler {
     margin-left: 12em;
     margin-top: -3em;
+  }
+
+  #depoimentos .nome h4 {
+    margin-left: -20%;
+  }
+
+  #depoimentos .paragrafo p {
+    padding: 1em 5em;
+    margin-left: -80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  #depoimentos .cardContainer {
+    width: 90vw;
+    height: 60vh;
+  }
+
+  #depoimentos .imagem {
+    background: none;
+  }
+
+  #depoimentos .imagem img {
+    width: 50%;
+    margin-left: 65%;
+    margin-bottom: 2em;
+    border-radius: 50%;
+  }
+
+  #depoimentos .nome h4 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #depoimentos button {
+    display: none;
+  }
+
+  #depoimentos .descricao p {
+    text-align: center;
+    margin-left: 50%;
+    display: none;
+  }
+
+  #depoimentos .paragrafo p {
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  #depoimentos .cardDepo {
+    flex-direction: column;
   }
 }
 
@@ -768,5 +982,21 @@ nav img {
 
   #footer .logo img {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #header::before {
+    content: "";
+    display: block;
+    max-width: 700px;
+    width: 100%;
+    height: 79vh;
+    background-image: url("../img/vetor1.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    left: 10%;
+    animation: MoveUpDown 2.5s infinite !important;
+    position: absolute;
   }
 }
